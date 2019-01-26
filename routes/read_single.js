@@ -1,5 +1,3 @@
-const db = require('../mysql')
-
 module.exports = async (f, opt, next) => {
   f.get('/post/id/:id', async (req, res) => {
     try {

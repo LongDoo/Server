@@ -5,6 +5,9 @@
   "author": "Ryan Willpower",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
   "dependencies": {
     "dotenv": "^6.2.0",
     "fastify": "^1.13.4",

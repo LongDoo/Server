@@ -1,5 +1,3 @@
-const db = require('../mysql')
-
 module.exports = async (f, opt, next) => {
   f.post('/post', async (req, res) => {
     try {
