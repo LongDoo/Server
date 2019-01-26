@@ -5,7 +5,7 @@ module.exports = async (f, opt, next) => {
       if (photo == undefined) {
         const photo = null
       }
-      const data = await db.execute(`
+      const data = await f.db.execute(`
         INSERT INTO Posts(title, excerpt, content, photo)
         VALUE(?, ?, ?, ?)`, [title, excerpt, content, photo])
       return {
