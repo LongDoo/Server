@@ -1,9 +1,13 @@
-module.exports = async (f, opt, next) => {
-  f.get('/', async (req, res) => {
-    return {
-      data: {
-        message: 'Welcome to news api, navigate to /posts for test your request'
-      }
-    }
-  })
-}
+const welcome = require('./welcome')
+const all_post = require('./read')
+const single_post = require('./read_single')
+const add_post = require('./create')
+const del = require('./delete')
+
+module.exports = [
+  welcome,
+  all_post,
+  single_post,
+  add_post,
+  del,
+]
